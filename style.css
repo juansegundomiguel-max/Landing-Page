@@ -1,119 +1,241 @@
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
+:root{
+    --primary:#3483fa;
+    --success:#00a650;
+    --bg:#ededed;
+    --card:#ffffff;
+    --text:#333;
+    --border:#ddd;
 }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:system-ui, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+/* HEADER */
 
 header{
-    background:#222;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
-
-header img{
-    width:120px;
-}
-
-nav ul{
-    list-style:none;
+    background:#fff;
+    padding:18px 40px;
     display:flex;
-    justify-content:center;
-    gap:25px;
-    padding:0;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-}
-
-form{
-    margin:20px 0;
+header form{
+    flex:1;
+    margin:0 40px;
 }
 
 input{
-    padding:10px;
-    width:250px;
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
 }
 
-button{
-    padding:10px 20px;
-    background:#3483fa;
-    color:white;
-    border:none;
-    cursor:pointer;
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
 }
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--primary);
+}
+
+/* CONTENIDO */
 
 main{
-    width:90%;
     max-width:1200px;
-    margin:auto;
+    margin:40px auto;
+    padding:0 20px;
 }
+
+/* TARJETAS */
 
 section{
-    background:white;
-    margin:25px 0;
-    padding:20px;
-    border-radius:10px;
+    background:var(--card);
+    border-radius:12px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
 }
+
+/* PRODUCTO */
 
 .producto{
-    display:flex;
+    display:grid;
+    grid-template-columns:2fr 1fr;
     gap:40px;
-    align-items:flex-start;
 }
 
-.producto article{
-    flex:2;
-}
-
-.producto aside{
-    flex:1;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-}
-
-figure img{
+.producto img{
     width:100%;
-    max-width:450px;
+    border-radius:12px;
 }
 
-.precio{
-    color:#00a650;
-    font-size:35px;
-}
-
-.descuento{
-    color:green;
-    font-weight:bold;
-}
-
-article{
+h1{
+    font-size:34px;
     margin-bottom:20px;
 }
 
-article img{
-    width:80px;
-    border-radius:50%;
+figure{
+    text-align:center;
 }
+
+figcaption{
+    margin-top:10px;
+    color:#777;
+}
+
+/* CAJA DE COMPRA */
+
+aside{
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:25px;
+}
+
+.precio-anterior{
+    color:#888;
+}
+
+.precio{
+    font-size:40px;
+    color:var(--success);
+    margin:10px 0;
+}
+
+.descuento{
+    color:var(--success);
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:var(--primary);
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2968c8;
+}
+
+/* DESCRIPCIÓN */
+
+details{
+    margin-top:20px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+details ul{
+    margin-left:20px;
+}
+
+/* OPINIONES */
+
+section article{
+    padding:20px 0;
+    border-bottom:1px solid #eee;
+}
+
+section article:last-child{
+    border:none;
+}
+
+article img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-bottom:10px;
+}
+
+/* RELACIONADOS */
 
 .relacionado{
     display:inline-block;
-    width:220px;
+    width:230px;
     text-align:center;
     margin-right:20px;
+    transition:.3s;
+}
+
+.relacionado:hover{
+    transform:translateY(-5px);
 }
 
 .relacionado img{
-    width:200px;
+    width:100%;
     border-radius:10px;
 }
+
+.relacionado h3{
+    margin:10px 0;
+}
+
+/* FOOTER */
 
 footer{
     background:#222;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:35px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+header form{
+    width:100%;
+    margin:0;
+}
+
+.producto{
+    grid-template-columns:1fr;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 }
