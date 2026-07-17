@@ -1,204 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Profesional</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auriculares Inalámbricos Pro X200 | TiendaTech</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header>
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <div class="header__logo">
+      <a href="#">Tienda<span>Tech</span></a>
+    </div>
 
-        <div class="logo">
-            <h2>TechStore</h2>
+    <form class="header__search" action="#">
+      <input type="search" placeholder="Buscar productos, marcas y más...">
+      <button type="submit">🔍</button>
+    </form>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">Categorías</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Mi cuenta</a></li>
+        <li><a href="#">Carrito 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="product-layout">
+
+      <!-- PRESENTACIÓN DEL PRODUCTO -->
+      <section class="product" aria-labelledby="product-title">
+        <p class="product__status">Producto nuevo</p>
+        <h1 id="product-title">Auriculares Inalámbricos Pro X200</h1>
+
+        <figure class="product__gallery">
+          <img src="https://placehold.co/500x400?text=Auriculares+Pro+X200"
+               alt="Auriculares inalámbricos Pro X200 color negro, vista frontal">
+          <figcaption>Vista principal del producto</figcaption>
+        </figure>
+
+        <!-- MÓDULO DE COMPRA -->
+        <div class="purchase-box">
+          <p class="purchase-box__discount">32% OFF</p>
+          <p class="purchase-box__old-price"><del>$45.999</del></p>
+          <p class="purchase-box__price">$31.299</p>
+          <p class="purchase-box__installments">en 6 cuotas de $5.216 sin interés</p>
+
+          <ul class="purchase-box__payments">
+            <li>💳 Tarjetas de crédito y débito</li>
+            <li>🏦 Transferencia bancaria</li>
+            <li>💵 Efectivo en puntos de pago</li>
+          </ul>
+
+          <a href="#" class="btn-comprar">Comprar ahora</a>
         </div>
 
-        <form>
-            <input type="search" placeholder="Buscar productos...">
-        </form>
+        <!-- FICHA TÉCNICA Y DESCRIPCIÓN -->
+        <div class="product-info">
+          <details class="specs">
+            <summary>Ficha técnica</summary>
+            <table>
+              <tbody>
+                <tr><th>Marca</th><td>TiendaTech</td></tr>
+                <tr><th>Modelo</th><td>Pro X200</td></tr>
+                <tr><th>Conectividad</th><td>Bluetooth 5.3</td></tr>
+                <tr><th>Batería</th><td>Hasta 30 horas</td></tr>
+                <tr><th>Color</th><td>Negro</td></tr>
+                <tr><th>Cancelación de ruido</th><td>Sí, activa</td></tr>
+              </tbody>
+            </table>
+          </details>
 
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <main>
-
-        <!-- PRODUCTO -->
-        <section class="producto">
-
-            <article class="galeria">
-
-                <p class="estado">Nuevo</p>
-
-                <h1>iPhone 15 Pro Max 256 GB Titanio</h1>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=700"
-                        alt="iPhone 15 Pro Max">
-                    <figcaption>Vista frontal del producto.</figcaption>
-                </figure>
-
-            </article>
-
-            <aside class="compra">
-
-                <p class="precio-anterior">
-                    <del>$2.000.000</del>
-                </p>
-
-                <h2 class="precio">$1.700.000</h2>
-
-                <p class="descuento">15% OFF</p>
-
-                <p>Hasta 12 cuotas sin interés.</p>
-
-                <button>Comprar ahora</button>
-
-            </aside>
-
-        </section>
-
-        <!-- DESCRIPCIÓN -->
-        <section>
-
-            <h2>Descripción</h2>
-
-            <details>
-
-                <summary>Ver ficha técnica</summary>
-
-                <ul>
-                    <li>Pantalla OLED de 6.7 pulgadas</li>
-                    <li>256 GB de almacenamiento</li>
-                    <li>Chip Apple A17 Pro</li>
-                    <li>Cámara principal de 48 MP</li>
-                    <li>Batería de larga duración</li>
-
-                </ul>
-
-            </details>
-
+          <div class="description">
+            <h2>Descripción del producto</h2>
             <p>
-                El iPhone 15 Pro Max ofrece un rendimiento excepcional,
-                una cámara profesional y un diseño de titanio resistente.
-                Es ideal para quienes buscan potencia, velocidad y una
-                excelente experiencia de uso.
+              Los Auriculares Pro X200 combinan un diseño cómodo con sonido de alta
+              fidelidad, ideales para el uso diario, el trabajo y el gaming. Su
+              cancelación de ruido activa te permite concentrarte sin distracciones,
+              y su batería de larga duración te acompaña todo el día sin necesidad
+              de recargar seguido.
             </p>
+          </div>
+        </div>
 
-        </section>
+        <!-- OPINIONES DE LOS USUARIOS -->
+        <section class="reviews" aria-labelledby="reviews-title">
+          <h2 id="reviews-title">Opiniones de los usuarios</h2>
 
-        <!-- OPINIONES -->
-        <section>
-
-            <h2>Opiniones de clientes</h2>
-
-            <article class="opinion">
-
-                <img src="https://i.pravatar.cc/70?img=5"
-                    alt="Perfil de Juan Pérez">
-
-                <div>
-
-                    <h3>Juan Pérez</h3>
-
-                    <time datetime="2026-07-12">
-                        12 de julio de 2026
-                    </time>
-
-                    <p>
-                        Excelente producto. La calidad de la cámara y la batería
-                        superaron mis expectativas.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article class="opinion">
-
-                <img src="https://i.pravatar.cc/70?img=12"
-                    alt="Perfil de María Gómez">
-
-                <div>
-
-                    <h3>María Gómez</h3>
-
-                    <time datetime="2026-07-09">
-                        9 de julio de 2026
-                    </time>
-
-                    <p>
-                        Muy buena compra. Llegó antes de lo esperado y funciona
-                        perfectamente.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </section>
-
-        <!-- RELACIONADOS -->
-        <section>
-
-            <h2>Productos relacionados</h2>
-
-            <div class="relacionados">
-
-                <article class="relacionado">
-
-                    <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=300"
-                        alt="iPhone 15">
-
-                    <h3>iPhone 15</h3>
-
-                    <p>$1.350.000</p>
-
-                </article>
-
-                <article class="relacionado">
-
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300"
-                        alt="Samsung Galaxy S25">
-
-                    <h3>Samsung Galaxy S25</h3>
-
-                    <p>$1.490.000</p>
-
-                </article>
-
+          <article class="review">
+            <img class="review__avatar" src="https://placehold.co/60x60" alt="Foto de perfil de Marina G.">
+            <div class="review__content">
+              <p class="review__name">Marina G.</p>
+              <time class="review__date" datetime="2026-06-12">12 de junio de 2026</time>
+              <p class="review__text">Excelente calidad de sonido y muy cómodos para usar todo el día. Los recomiendo.</p>
             </div>
+          </article>
 
+          <article class="review">
+            <img class="review__avatar" src="https://placehold.co/60x60" alt="Foto de perfil de Tomás R.">
+            <div class="review__content">
+              <p class="review__name">Tomás R.</p>
+              <time class="review__date" datetime="2026-05-30">30 de mayo de 2026</time>
+              <p class="review__text">La batería dura muchísimo, tal cual lo anuncian. Llegaron rápido y bien embalados.</p>
+            </div>
+          </article>
+
+          <article class="review">
+            <img class="review__avatar" src="https://placehold.co/60x60" alt="Foto de perfil de Julieta P.">
+            <div class="review__content">
+              <p class="review__name">Julieta P.</p>
+              <time class="review__date" datetime="2026-05-18">18 de mayo de 2026</time>
+              <p class="review__text">Buena relación precio-calidad. La cancelación de ruido funciona muy bien en la calle.</p>
+            </div>
+          </article>
         </section>
+      </section>
 
-    </main>
+      <!-- PRODUCTOS RELACIONADOS -->
+      <aside class="related" aria-labelledby="related-title">
+        <h2 id="related-title">Productos relacionados</h2>
 
-    <!-- FOOTER -->
-    <footer>
+        <article class="related__item">
+          <img src="https://placehold.co/150x150?text=Parlante" alt="Parlante Bluetooth portátil">
+          <p class="related__name">Parlante Bluetooth Portátil</p>
+          <p class="related__price">$18.499</p>
+        </article>
 
-        <h3>TechStore</h3>
+        <article class="related__item">
+          <img src="https://placehold.co/150x150?text=Auriculares+In-Ear" alt="Auriculares in-ear inalámbricos">
+          <p class="related__name">Auriculares In-Ear Sport</p>
+          <p class="related__price">$14.999</p>
+        </article>
 
-        <p>📧 contacto@techstore.com</p>
+        <article class="related__item">
+          <img src="https://placehold.co/150x150?text=Cargador" alt="Cargador inalámbrico rápido">
+          <p class="related__name">Cargador Inalámbrico Rápido</p>
+          <p class="related__price">$9.299</p>
+        </article>
+      </aside>
 
-        <p>📞 +54 11 1234-5678</p>
+    </div>
+  </main>
 
-        <p>Medios de pago: Visa • Mastercard • Mercado Pago</p>
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer__section">
+      <h3>Contacto</h3>
+      <p>📞 0800-555-0199</p>
+      <p>✉️ ayuda@tiendatech.com</p>
+    </div>
 
-        <p>Garantía oficial de 12 meses.</p>
+    <div class="footer__section">
+      <h3>Ayuda</h3>
+      <ul>
+        <li><a href="#">Preguntas frecuentes</a></li>
+        <li><a href="#">Cambios y devoluciones</a></li>
+        <li><a href="#">Seguimiento de pedido</a></li>
+      </ul>
+    </div>
 
-    </footer>
+    <div class="footer__section">
+      <h3>Medios de pago</h3>
+      <p>💳 Visa · Mastercard · Amex</p>
+      <p>🏦 Transferencia bancaria</p>
+    </div>
+
+    <div class="footer__section">
+      <h3>Garantía</h3>
+      <p>Todos los productos cuentan con 12 meses de garantía oficial.</p>
+    </div>
+
+    <p class="footer__copy">© 2026 TiendaTech. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
-
 </html>
