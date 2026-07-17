@@ -1,182 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auriculares Inalámbricos Pro X200 | TiendaTech</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Auriculares Bluetooth Pro</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ENCABEZADO -->
-  <header class="header">
-    <div class="header__logo">
-      <a href="#">Tienda<span>Tech</span></a>
-    </div>
+<header>
+    <div class="logo">TechStore</div>
 
-    <form class="header__search" action="#">
-      <input type="search" placeholder="Buscar productos, marcas y más...">
-      <button type="submit">🔍</button>
-    </form>
+    <input type="text" placeholder="Buscar productos...">
 
-    <nav class="header__nav">
-      <ul>
-        <li><a href="#">Categorías</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Mi cuenta</a></li>
-        <li><a href="#">Carrito 🛒</a></li>
-      </ul>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Categorías</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
     </nav>
-  </header>
+</header>
 
-  <main class="container">
+<main>
 
-    <div class="product-layout">
+<section class="producto">
 
-      <!-- PRESENTACIÓN DEL PRODUCTO -->
-      <section class="product" aria-labelledby="product-title">
-        <p class="product__status">Producto nuevo</p>
-        <h1 id="product-title">Auriculares Inalámbricos Pro X200</h1>
-
-        <figure class="product__gallery">
-          <img src="https://placehold.co/500x400?text=Auriculares+Pro+X200"
-               alt="Auriculares inalámbricos Pro X200 color negro, vista frontal">
-          <figcaption>Vista principal del producto</figcaption>
-        </figure>
-
-        <!-- MÓDULO DE COMPRA -->
-        <div class="purchase-box">
-          <p class="purchase-box__discount">32% OFF</p>
-          <p class="purchase-box__old-price"><del>$45.999</del></p>
-          <p class="purchase-box__price">$31.299</p>
-          <p class="purchase-box__installments">en 6 cuotas de $5.216 sin interés</p>
-
-          <ul class="purchase-box__payments">
-            <li>💳 Tarjetas de crédito y débito</li>
-            <li>🏦 Transferencia bancaria</li>
-            <li>💵 Efectivo en puntos de pago</li>
-          </ul>
-
-          <a href="#" class="btn-comprar">Comprar ahora</a>
-        </div>
-
-        <!-- FICHA TÉCNICA Y DESCRIPCIÓN -->
-        <div class="product-info">
-          <details class="specs">
-            <summary>Ficha técnica</summary>
-            <table>
-              <tbody>
-                <tr><th>Marca</th><td>TiendaTech</td></tr>
-                <tr><th>Modelo</th><td>Pro X200</td></tr>
-                <tr><th>Conectividad</th><td>Bluetooth 5.3</td></tr>
-                <tr><th>Batería</th><td>Hasta 30 horas</td></tr>
-                <tr><th>Color</th><td>Negro</td></tr>
-                <tr><th>Cancelación de ruido</th><td>Sí, activa</td></tr>
-              </tbody>
-            </table>
-          </details>
-
-          <div class="description">
-            <h2>Descripción del producto</h2>
-            <p>
-              Los Auriculares Pro X200 combinan un diseño cómodo con sonido de alta
-              fidelidad, ideales para el uso diario, el trabajo y el gaming. Su
-              cancelación de ruido activa te permite concentrarte sin distracciones,
-              y su batería de larga duración te acompaña todo el día sin necesidad
-              de recargar seguido.
-            </p>
-          </div>
-        </div>
-
-        <!-- OPINIONES DE LOS USUARIOS -->
-        <section class="reviews" aria-labelledby="reviews-title">
-          <h2 id="reviews-title">Opiniones de los usuarios</h2>
-
-          <article class="review">
-            <img class="review__avatar" src="https://placehold.co/60x60" alt="Foto de perfil de Marina G.">
-            <div class="review__content">
-              <p class="review__name">Marina G.</p>
-              <time class="review__date" datetime="2026-06-12">12 de junio de 2026</time>
-              <p class="review__text">Excelente calidad de sonido y muy cómodos para usar todo el día. Los recomiendo.</p>
-            </div>
-          </article>
-
-          <article class="review">
-            <img class="review__avatar" src="https://placehold.co/60x60" alt="Foto de perfil de Tomás R.">
-            <div class="review__content">
-              <p class="review__name">Tomás R.</p>
-              <time class="review__date" datetime="2026-05-30">30 de mayo de 2026</time>
-              <p class="review__text">La batería dura muchísimo, tal cual lo anuncian. Llegaron rápido y bien embalados.</p>
-            </div>
-          </article>
-
-          <article class="review">
-            <img class="review__avatar" src="https://placehold.co/60x60" alt="Foto de perfil de Julieta P.">
-            <div class="review__content">
-              <p class="review__name">Julieta P.</p>
-              <time class="review__date" datetime="2026-05-18">18 de mayo de 2026</time>
-              <p class="review__text">Buena relación precio-calidad. La cancelación de ruido funciona muy bien en la calle.</p>
-            </div>
-          </article>
-        </section>
-      </section>
-
-      <!-- PRODUCTOS RELACIONADOS -->
-      <aside class="related" aria-labelledby="related-title">
-        <h2 id="related-title">Productos relacionados</h2>
-
-        <article class="related__item">
-          <img src="https://placehold.co/150x150?text=Parlante" alt="Parlante Bluetooth portátil">
-          <p class="related__name">Parlante Bluetooth Portátil</p>
-          <p class="related__price">$18.499</p>
-        </article>
-
-        <article class="related__item">
-          <img src="https://placehold.co/150x150?text=Auriculares+In-Ear" alt="Auriculares in-ear inalámbricos">
-          <p class="related__name">Auriculares In-Ear Sport</p>
-          <p class="related__price">$14.999</p>
-        </article>
-
-        <article class="related__item">
-          <img src="https://placehold.co/150x150?text=Cargador" alt="Cargador inalámbrico rápido">
-          <p class="related__name">Cargador Inalámbrico Rápido</p>
-          <p class="related__price">$9.299</p>
-        </article>
-      </aside>
-
-    </div>
-  </main>
-
-  <!-- PIE DE PÁGINA -->
-  <footer class="footer">
-    <div class="footer__section">
-      <h3>Contacto</h3>
-      <p>📞 0800-555-0199</p>
-      <p>✉️ ayuda@tiendatech.com</p>
+    <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700" alt="Auriculares Bluetooth Pro">
     </div>
 
-    <div class="footer__section">
-      <h3>Ayuda</h3>
-      <ul>
-        <li><a href="#">Preguntas frecuentes</a></li>
-        <li><a href="#">Cambios y devoluciones</a></li>
-        <li><a href="#">Seguimiento de pedido</a></li>
-      </ul>
+    <div class="info">
+
+        <p class="estado">Nuevo</p>
+
+        <h1>Auriculares Bluetooth Pro Max</h1>
+
+        <p class="precio-anterior">$199.999</p>
+
+        <p class="precio">$149.999 <span class="descuento">25% OFF</span></p>
+
+        <p class="cuotas">Hasta 6 cuotas sin interés.</p>
+
+        <a href="#" class="boton">Comprar ahora</a>
+
     </div>
 
-    <div class="footer__section">
-      <h3>Medios de pago</h3>
-      <p>💳 Visa · Mastercard · Amex</p>
-      <p>🏦 Transferencia bancaria</p>
-    </div>
+</section>
 
-    <div class="footer__section">
-      <h3>Garantía</h3>
-      <p>Todos los productos cuentan con 12 meses de garantía oficial.</p>
-    </div>
+<section>
 
-    <p class="footer__copy">© 2026 TiendaTech. Todos los derechos reservados.</p>
-  </footer>
+<h2>Ficha Técnica</h2>
+
+<details>
+    <summary>Ver especificaciones</summary>
+
+    <ul>
+        <li>Bluetooth 5.3</li>
+        <li>Cancelación de ruido</li>
+        <li>Batería hasta 40 horas</li>
+        <li>Carga USB-C</li>
+        <li>Micrófono incorporado</li>
+    </ul>
+
+</details>
+
+<h2>Descripción</h2>
+
+<p>
+Los Auriculares Bluetooth Pro Max ofrecen un sonido de alta calidad,
+gran autonomía y un diseño cómodo para utilizar durante todo el día.
+Son ideales para música, videojuegos, videollamadas y trabajo remoto.
+</p>
+
+</section>
+
+<section>
+
+<h2>Opiniones</h2>
+
+<article class="comentario">
+
+<img src="https://i.pravatar.cc/60?img=1" alt="Usuario">
+
+<div>
+<h3>Juan Pérez</h3>
+<time datetime="2026-07-10">10 de julio de 2026</time>
+
+<p>
+Excelente calidad de sonido. La batería dura muchísimo.
+</p>
+
+</div>
+
+</article>
+
+<article class="comentario">
+
+<img src="https://i.pravatar.cc/60?img=5" alt="Usuario">
+
+<div>
+
+<h3>María Gómez</h3>
+
+<time datetime="2026-06-28">28 de junio de 2026</time>
+
+<p>
+Muy cómodos y el envío fue rápido. Los recomiendo.
+</p>
+
+</div>
+
+</article>
+
+</section>
+
+<section>
+
+<h2>Productos Relacionados</h2>
+
+<div class="relacionados">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?w=400" alt="Parlante Bluetooth">
+
+<h3>Parlante Bluetooth</h3>
+
+<p>$89.999</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400" alt="Smartwatch">
+
+<h3>Smartwatch Sport</h3>
+
+<p>$129.999</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>📧 contacto@techstore.com</p>
+
+<p>Centro de Ayuda | Garantía | Cambios y Devoluciones</p>
+
+<p>Medios de pago: Visa - Mastercard - Mercado Pago</p>
+
+<p>© 2026 TechStore</p>
+
+</footer>
 
 </body>
 </html>
